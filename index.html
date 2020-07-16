@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Memo-Test</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--Bootstrap via node-->
+    <!--<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">-->
+    <link rel='stylesheet' type='text/css' media='screen' href='/Memo-Test/css/style.css'>
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="memot text-center p-1"><span>Memo-Test ~ v 1.0</span></div>
+    <div id="fin-juego">
+        <p class="display-1 text-center">Fin del juego! Tardaste <strong><!-- --></strong> turnos en terminar.</p>
+        <p class="display-2 text-center" onclick="EmpezardeNuevo()">Empezar de nuevo?</p>
+    </div>
+    <div class="container">
+        <section class="memo-test-juego">
+            <!--data-* me permite agregar informacion adicional que luego usaremos para cotejar si existen o no coincidencias-->
+            <div class="memo-cartas" data-control="tarot1">
+                <img class="frente" src="/Memo-Test/images/tarot1.jpg" alt=tarot1 />
+                <img class="reverso" src="/Memo-Test/images/back.jpg" alt="backpic" />
+            </div>
+            <div class="memo-cartas" data-control="tarot1">
+                <img class="frente" src="/Memo-Test/images/tarot1.jpg" alt="tarot1" />
+                <img class="reverso" src="/Memo-Test/images/back.jpg" alt="backpic" />
+            </div>
+
+            <div class="memo-cartas" data-control="tarot2">
+                <img class="frente" src="/Memo-Test/images/tarot2.jpg" alt="tarot2" />
+                <img class="reverso" src="/Memo-Test/images/back.jpg" alt="backpic" />
+            </div>
+            <div class="memo-cartas" data-control="tarot2">
+                <img class="frente" src="/Memo-Test/images/tarot2.jpg" alt="tarot2" />
+                <img class="reverso" src="/Memo-Test/images/back.jpg" alt="backpic" />
+            </div>
+
+            <div class="memo-cartas" data-control="tarot3">
+                <img class="frente" src="/Memo-Test/images/tarot3.jpg" alt="tarot3" />
+                <img class="reverso" src="/Memo-Test/images/back.jpg" alt="backpic" />
+            </div>
+            <div class="memo-cartas" data-control="tarot3">
+                <img class="frente" src="/Memo-Test/images/tarot3.jpg" alt="tarot3" />
+                <img class="reverso" src="/Memo-Test/images/back.jpg" alt="backpic" />
+            </div>
+
+            <div class="memo-cartas" data-control="tarot4">
+                <img class="frente" src="/Memo-Test/images/tarot4.jpg" alt="tarot4" />
+                <img class="reverso" src="/Memo-Test/images/back.jpg" alt="backpic" />
+            </div>
+            <div class="memo-cartas" data-control="tarot4">
+                <img class="frente" src="/Memo-Test/images/tarot4.jpg" alt="tarot4" />
+                <img class="reverso" src="/Memo-Test/images/back.jpg" alt="backpic" />
+            </div>
+
+            <div class="memo-cartas" data-control="tarot5">
+                <img class="frente" src="/Memo-Test/images/tarot5.jpg" alt="tarot5" />
+                <img class="reverso" src="/Memo-Test/images/back.jpg" alt="backpic" />
+            </div>
+            <div class="memo-cartas" data-control="tarot5">
+                <img class="frente" src="/Memo-Test/images/tarot5.jpg" alt="tarot5" />
+                <img class="reverso" src="/Memo-Test/images/back.jpg" alt="backpic" />
+            </div>
+
+            <div class="memo-cartas" data-control="tarot6">
+                <img class="frente" src="/Memo-Test/images/tarot6.jpg" alt="tarot6" />
+                <img class="reverso" src="/Memo-Test/images/back.jpg" alt="backpic" />
+            </div>
+            <div class="memo-cartas" data-control="tarot6">
+                <img class="frente" src="/Memo-Test/images/tarot6.jpg" alt="tarot6" />
+                <img class="reverso" src="/Memo-Test/images/back.jpg" alt="backpic" />
+            </div>
+            <div class="memo-cartas" data-control="tarot7">
+                <img class="frente" src="/Memo-Test/images/tarot7.jpg" alt="tarot7" />
+                <img class="reverso" src="/Memo-Test/images/back.jpg" alt="backpic" />
+            </div>
+            <div class="memo-cartas" data-control="tarot7">
+                <img class="frente" src="/Memo-Test/images/tarot7.jpg" alt="tarot7" />
+                <img class="reverso" src="/Memo-Test/images/back.jpg" alt="backpic" />
+            </div>
+            <div class="memo-cartas" data-control="tarot8">
+                <img class="frente" src="/Memo-Test/images/tarot8.jpg" alt="tarot8" />
+                <img class="reverso" src="/Memo-Test/images/back.jpg" alt="backpic" />
+            </div>
+            <div class="memo-cartas" data-control="tarot8">
+                <img class="frente" src="/Memo-Test/images/tarot8.jpg" alt="tarot8" />
+                <img class="reverso" src="/Memo-Test/images/back.jpg" alt="backpic" />
+            </div>
+        </section>
+    </div>
+    <script src='/Memo-Test/src/main.js'></script>
+</body>
+
+</html>

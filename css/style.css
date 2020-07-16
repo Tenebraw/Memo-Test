@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #011627;
+    font-family: 'Tangerine', cursive;
+    font-size: 2.1em;
+    color: white;
+}
+
+.memo-test-juego {
+    padding-top: 50px;
+    width: 850px;
+    height: 850px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 950px;
+}
+
+.memo-cartas {
+    width: calc(25% - 10px);
+    height: calc(33.333% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    box-shadow: -3px 13px 13px 0px rgba(0, 0, 0, 1);
+}
+
+.memot {
+    margin-top: 30px;
+}
+
+.memo-cartas:active {
+    transform: scale(0.90);
+    transition: transform .2s;
+}
+
+.memo-cartas.girar {
+    transform: rotateY(180deg);
+}
+
+.frente,
+.reverso {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    position: absolute;
+    border-radius: 5px;
+    -webkit-box-shadow: -3px 13px 13px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -3px 13px 13px 0px rgba(0, 0, 0, 1);
+    box-shadow: -3px 13px 13px 0px rgba(0, 0, 0, 1);
+    backface-visibility: hidden;
+}
+
+.frente {
+    transform: rotateY(180deg);
+}
+
+#fin-juego {
+    display: none;
+}
+
+.display-2 {
+    cursor: pointer;
+}
+
+@media (max-width:575px) {
+    .memo-test-juego {
+        width: 450px;
+        height: 450px;
+    }
+    .display-1,
+    .display-2 {
+        font-size: 45px;
+    }
+}
