@@ -1,8 +1,8 @@
-# Memo-Test
+## Memo-Test
 
-Juego Memo-Test. Version personalizada.
+*Juego Memo-Test. Version personalizada.*
 
-Instalacion:
-Ejecutar npm install.
+**Instalación:**
+- Ejecutar npm install.
 
-Githubpage:https://tenebraw.github.io/Memo-Test/
+###### Git-page: https://tenebraw.github.io/Memo-Test/
