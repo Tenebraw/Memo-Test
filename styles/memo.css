@@ -1,0 +1,88 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    /*background-color: steelblue;*/
+   /* font-family: 'Tangerine', cursive;*/
+   background-image:url('../images/fondo.jpg');
+   background-size: 100%;
+   height: 100%;
+   background-size: cover;
+
+
+   font-family: 'Playfair Display', serif;
+    font-size: 2.1em;
+    color: darkolivegreen !important;
+}
+
+.btn-primary{
+    z-index: 1;
+}
+.container{
+    margin-top: -40px;
+}
+
+.cartascontenedor{
+    /*padding-top: 50px;*/
+    width: 850px;
+    height: 850px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    perspective: 950px;
+    justify-content: center;
+    align-content: space-evenly;
+
+}
+
+
+.memocartas {
+    width: calc(15% - 10px);
+    height: calc(15% - 10px);
+    margin: 5px;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform .1s;
+    box-shadow: -3px 13px 13px 0px rgba(0, 0, 0, 1);
+}
+
+.memocartas:active {
+    transform: scale(0.90);
+    transition: transform .2s;
+}
+
+.memocartas.girar {
+    transform: rotateY(180deg);
+}
+
+.frente,
+.reverso {
+    width: 100%;
+  
+    position: absolute;
+    border-radius: 5px;
+    -webkit-box-shadow: -3px 13px 13px 0px rgba(0, 0, 0, 1);
+    -moz-box-shadow: -3px 13px 13px 0px rgba(0, 0, 0, 1);
+    box-shadow: -3px 13px 13px 0px rgba(0, 0, 0, 1);
+    backface-visibility: hidden;
+}
+
+.frente {
+    transform: rotateY(180deg);
+}
+
+.bloquear{
+    pointer-events: none;
+}
+
+#fin-juego {
+    display: none;
+    text-align: center;
+}
+
+

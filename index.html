@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Memo Test</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/memo.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet"> 
+   
+   
+</head>
+<body>
+    <header>
+        <div class="text-center p-1"><span>Memo-Test . v 1.0</span>
+          <div class="d-grid gap-2 col-3 mx-auto">
+          <button class="btn btn-primary" type="button" onclick="empezarDeNuevo()">Empezar de nuevo</button>
+        </div>
+      </div>
+    </header>
+    <div id="fin-juego">
+      <p class="display-4">Fin del juego! Tardaste <strong><!-- --></strong> turnos en terminar.</p>
+  </div>
+    
+    <div class="container">
+        <section class="cartascontenedor">
+    
+          <div class="memocartas" name="">
+            <img class="frente" src="images/front1.jpg" id="carta1"/>
+            <img class="reverso" src="images/back.jpg" alt="backpic" />
+          </div>
+          <div class="memocartas" name="">
+            <img class="frente" src="images/front1.jpg" id="carta2"/>
+            <img class="reverso" src="images/back.jpg" alt="backpic" />
+          </div>
+          <div class="memocartas" name="carta2">
+            <img class="frente" src="images/front2.jpg" id="carta3"/>
+            <img class="reverso" src="images/back.jpg" alt="backpic" />
+          </div>
+          <div class="memocartas" name="carta2">
+            <img class="frente" src="images/front2.jpg" id="carta4"/>
+            <img class="reverso" src="images/back.jpg" alt="backpic" />
+          </div>
+          <div class="memocartas" name="carta3">
+            <img class="frente" src="images/front3.jpg" id="carta5"/>
+            <img class="reverso" src="images/back.jpg" alt="backpic" />
+          </div>
+          <div class="memocartas" name="carta3">
+            <img class="frente" src="images/front3.jpg" id="carta6"/>
+            <img class="reverso" src="images/back.jpg" alt="backpic" />
+          </div>
+    
+        
+            <div class="memocartas" name="carta4">
+                <img class="frente" src="images/front4.jpg" id="carta7"/>
+                <img class="reverso" src="images/back.jpg" alt="backpic" />
+            </div>
+            <div class="memocartas" name="carta4">
+                <img class="frente" src="images/front4.jpg" id="carta8"/>
+                <img class="reverso" src="images/back.jpg" alt="backpic" />
+            </div>
+            <div class="memocartas" name="carta5">
+                <img class="frente" src="images/front5.jpg" id="carta9"/>
+                <img class="reverso" src="images/back.jpg" alt="backpic" />
+            </div>
+            <div class="memocartas" name="carta5">
+                <img class="frente" src="images/front5.jpg" id="carta10"/>
+                <img class="reverso" src="images/back.jpg" alt="backpic" />
+              </div>
+              <div class="memocartas" name="carta6">
+                <img class="frente" src="images/front6.jpg" id="carta11"/>
+                <img class="reverso" src="images/back.jpg" alt="backpic" />
+              </div>
+              <div class="memocartas" name="carta6">
+                <img class="frente" src="images/front6.jpg" id="carta12" />
+                <img class="reverso" src="images/back.jpg" alt="backpic" />
+              </div>
+          
+         
+            <div class="memocartas" name="carta7">
+                <img class="frente" src="images/front7.jpg" id="carta13"/>
+                <img class="reverso" src="images/back.jpg" alt="backpic" />
+            </div>
+            <div class="memocartas" name="carta7">
+                <img class="frente" src="images/front7.jpg" id="carta14" />
+                <img class="reverso" src="images/back.jpg" alt="backpic" />
+            </div>
+            <div class="memocartas" name="carta8">
+                <img class="frente" src="images/front8.jpg" id="carta15"/>
+                <img class="reverso" src="images/back.jpg" alt="backpic" />
+            </div>
+            <div class="memocartas" name="carta8">
+                <img class="frente" src="images/front8.jpg" id="carta16"/>
+                <img class="reverso" src="images/back.jpg" alt="backpic" />
+              </div>
+              <div class="memocartas" name="carta9">
+                <img class="frente" src="images/front9.jpg" id="carta17"/>
+                <img class="reverso" src="images/back.jpg" alt="backpic" />
+              </div>
+              <div class="memocartas" name="carta9">
+                <img class="frente" src="images/front9.jpg" id="carta18"/>
+                <img class="reverso" src="images/back.jpg" alt="backpic" />
+              </div>
+   
+
+            <div class="memocartas" name="carta10">
+                <img class="frente" src="images/front10.jpg" id="carta19"/>
+                <img class="reverso" src="images/back.jpg" alt="backpic" />    
+            </div>
+            <div class="memocartas" name="carta10">
+                <img class="frente" src="images/front10.jpg" id="carta20"/>
+                <img class="reverso" src="images/back.jpg" alt="backpic" />
+            </div>
+            <div class="memocartas" name="carta11">
+                <img class="frente" src="images/front11.jpg" id="carta21"/>
+                <img class="reverso" src="images/back.jpg" alt="backpic" />
+            </div>
+            <div class="memocartas" name="carta11">
+                <img class="frente" src="images/front11.jpg" id="carta22"/>
+                <img class="reverso" src="images/back.jpg" alt="backpic" />
+              </div>
+              <div class="memocartas" name="carta12">
+                <img class="frente" src="images/front12.jpg" id="carta23"/>
+                <img class="reverso" src="images/back.jpg" alt="backpic" />
+              </div>
+              <div class="memocartas" name="carta12">
+                <img class="frente" src="images/front12.jpg" id="carta24"/>
+                <img class="reverso" src="images/back.jpg" alt="backpic" />
+              </div>
+          
+
+        </section>
+      </div>
+<script src="src/index.js"></script> 
+</body>
+</html>

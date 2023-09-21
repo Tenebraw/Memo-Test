@@ -1,0 +1,22 @@
+{
+  "name": "memo-test",
+  "version": "1.0.0",
+  "description": "Version Propia Memo Test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tenebraw/Memo-Test.git"
+  },
+  "author": "Adrian T.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tenebraw/Memo-Test/issues"
+  },
+  "homepage": "https://github.com/Tenebraw/Memo-Test#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.2"
+  }
+}
